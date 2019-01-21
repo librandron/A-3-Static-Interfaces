@@ -16,7 +16,31 @@ namespace Advanced_Lesson_3_Static_Interface
         /// </summary>
         public static void AL3_P1_3()
         {
+            for (int i = 0; i < 100; i++)
+            {
+                PracticeID a = new PracticeID();
+            }
+            Console.WriteLine(PracticeID.id);
+            
         }
+
+        public class PracticeID
+        {
+            public static int id;
+            public string name;
+
+            public PracticeID()
+            {
+                id++;
+            }
+
+            static PracticeID()
+            {
+                id = 1000;
+            }
+        }
+
+
 
         /// <summary>
         /// AL3-P2/3. Отредактировать консольное приложение Printer. 
