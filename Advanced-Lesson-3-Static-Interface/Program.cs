@@ -10,11 +10,19 @@ namespace Advanced_Lesson_3_Static_Interface
         {
             static void Main(string[] args)
             {
-                //Practice.AL3_P1_3();
+                Practice.AL3_P1_3();
 
-                Lesson.RentPointsExample();
+            //Lesson.RentPointsExample();
 
-                Console.ReadLine();
+            Practice.GuessType<int>(777);
+            Practice.GuessType<int>(-8);
+            Practice.GuessType<string>("Hello there");
+            Practice.GuessType<DateTime>(DateTime.Now);
+            Practice.GuessType<double>(-25.5);
+            
+
+
+            Console.ReadLine();
             }
         }
 
